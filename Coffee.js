@@ -1,6 +1,6 @@
 let main = document.createElement('main')
 document.body.appendChild(main)
-main.setAttribute('class', 'main-figma')
+main.setAttribute('class', 'main-figma') 
 
 let Frstdiv = document.createElement('div')
 main.appendChild(Frstdiv)
