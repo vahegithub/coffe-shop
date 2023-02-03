@@ -33,7 +33,7 @@ for (let i = 0; i < 4; i++) {
     For1.appendChild(For1Div)
     For1Div.setAttribute('class', 'div1-for1')
 
-
+    
     let Fi = document.createElement('i')
     For1Div.appendChild(Fi)
     Fi.setAttribute('class', 'fa fa-icon-name')
