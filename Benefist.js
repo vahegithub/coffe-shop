@@ -47,6 +47,7 @@ WhyArr.forEach(element => {
     Fiimg.setAttribute('class', 'img1-for')
     Fi.appendChild(Fiimg)
     Fiimg.src = element.fimg
+    
 
     let EsimDiv = document.createElement('div')
     For1.appendChild(EsimDiv)
