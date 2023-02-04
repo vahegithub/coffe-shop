@@ -35,8 +35,7 @@ WhyArr.forEach(element => {
     ForDiv.appendChild(For1)
     For1.setAttribute('class', 'for1-div')
 
-    let For1Div = document.cr
-    eateElement('div')
+    let For1Div = document.createElement('div')
     For1.appendChild(For1Div)
     For1Div.setAttribute('class', 'div1-for1')
 
