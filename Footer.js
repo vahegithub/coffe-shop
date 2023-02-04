@@ -48,34 +48,11 @@ footDiv.append(LastDiv)
 LastDiv.setAttribute('class', 'last-div')
 
 
-//  let Lastdiv2 = document.createElement('div')
-//  LastDiv.appendChild(Lastdiv2)
-//  div2.setAttribute('class' , 'last-div2')
+let FootArr = ['Shop','Our story','Products','Contact','Find Store','Press','Subscription']
 
+FootArr.forEach(element => {
 let l2 = document.createElement('a')
 LastDiv.appendChild(l2)
-l2.innerText = 'Shop'
+l2.innerText = element
+});
 
-let l3 = document.createElement('a')
-LastDiv.appendChild(l3)
-l3.innerText = 'Our story'
-
-let l4 = document.createElement('a')
-LastDiv.appendChild(l4)
-l4.innerText = 'Products'
-
-let l5 = document.createElement('a')
-LastDiv.appendChild(l5)
-l5.innerText = 'Contact'
-
-let l6 = document.createElement('a')
-LastDiv.appendChild(l6)
-l6.innerText = 'Find Store'
-
-let l7 = document.createElement('a')
-LastDiv.appendChild(l7)
-l7.innerText = 'Press'
-
-let l8 = document.createElement('a')
-LastDiv.appendChild(l8)
-l8.innerText = 'Subscription'
