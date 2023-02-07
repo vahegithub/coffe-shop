@@ -32,54 +32,114 @@ cendiv1.appendChild(h2p)
 h2p.setAttribute('id', 'h2p')
 h2p.innerText = 'See all Products'
 
-let ProdObj = {
-    bh3:['Almond love coffee','Billy goat breakfast','Daniel love coffee','Maria love latte','John love nescafe','Anna like cake'],
-    bh4:['14.50 $','16.00 $','20.00 $','15.00 $','18.00 $','19.50 $']
-
-}
-let ProdOb = [
-    {price:'14.50$',name:'Almond love coffee'},
-    {price:'16.00$',name:'Billy goat breakfast'},
-    {price:'20.00$',name:'Daniel love coffee'},
-    {price:'16.50$',name:'Maria love latte'},
-    {price:'19.50$',name:'John love nescafe'},
-    {price:'15.00$',name:'Anna like cake'}
 
 
-]
+// let ProdOb = [
+//     {price:'14.50$',name:'Almond love coffee'},
+//     {price:'16.00$',name:'Billy goat breakfast'},
+//     {price:'20.00$',name:'Daniel love coffee'},
+//     {price:'16.50$',name:'Maria love latte'},
+//     {price:'19.50$',name:'John love nescafe'},
+//     {price:'15.00$',name:'Anna like cake'}
 
-for (let i = 0; i < 6; i++) {
-    let blockDiv1 = document.createElement('div')
-    cendiv2.appendChild(blockDiv1)
-    blockDiv1.setAttribute('class', 'block-div1')
 
-    let blImg = document.createElement('img')
-    blockDiv1.appendChild(blImg)
-    blImg.src = 'Img.svg'
-    blImg.setAttribute('class', 'block-img')
+// ]
 
-    let nam = document.createElement('h3')
-    blockDiv1.appendChild(nam)
-    nam.setAttribute('id', 'bh3')
-    // nam.innerText = 'Gago Love Coffee'
-    nam.innerText = ProdOb.forEach(element => {
-        return element.name
-        // console.log(element.name)
+// ProdOb.forEach(element =>{
+//     let blockDiv1 = document.createElement('div')
+//     cendiv2.appendChild(blockDiv1)
+//     blockDiv1.setAttribute('class', 'block-div1')
 
-    });
+   
 
-    let pric = document.createElement('h4')
-    blockDiv1.appendChild(pric)
-    pric.setAttribute('id', 'bh4')
-    // price.innerText = '$14.50'
-    pric.innerText = ProdOb.forEach(element => {
-        return element.price
-        // console.log(element.name)
+//     let blImg = document.createElement('img')
+//     blockDiv1.appendChild(blImg)
+//     blImg.src = 'image/Img.svg'
+//     blImg.setAttribute('class', 'block-img')
 
-    });
+//     let nam = document.createElement('h3')
+//     blockDiv1.appendChild(nam)
+//     nam.setAttribute('id', 'bh3')
 
-    let Viwbut = document.createElement('button')
-    blockDiv1.appendChild(Viwbut)
-    Viwbut.setAttribute('class', 'view-but')
-    Viwbut.innerText = 'View Product'
-}
+//     nam.innerText = element.name
+
+//     let pric = document.createElement('h4')
+//     blockDiv1.appendChild(pric)
+//     pric.setAttribute('id', 'bh4')
+//      pric.innerText = element.price 
+    
+
+//     let Viwbut = document.createElement('button')
+//     blockDiv1.appendChild(Viwbut)
+//     Viwbut.setAttribute('class', 'view-but')
+//     Viwbut.innerText = 'View Product'
+
+
+// })
+fetch('https://api.sampleapis.com/coffee/hot')
+.then(res => {
+return res.json()
+})
+.then(data =>{
+        data.map((element,index) =>{
+        if(index <= 8){
+           
+            let blockDiv1 = document.createElement('div')
+        cendiv2.appendChild(blockDiv1)
+        blockDiv1.setAttribute('class', 'block-div1')
+    
+        let blImg = document.createElement('img')
+        blockDiv1.appendChild(blImg)
+        blImg.setAttribute('class', 'block-img')
+        blImg.src = element.image
+    
+        let nam = document.createElement('h3')
+        blockDiv1.appendChild(nam)
+        nam.setAttribute('id', 'bh3')
+        nam.innerText = element.title
+    
+        let pric = document.createElement('h4')
+        blockDiv1.appendChild(pric)
+        pric.setAttribute('id', 'bh4')
+        pric.innerText = element.id 
+        
+    
+        let Viwbut = document.createElement('button')
+        blockDiv1.appendChild(Viwbut)
+        Viwbut.setAttribute('class', 'view-but')
+        Viwbut.innerText = 'View Product'
+
+        }
+        
+        
+    })
+  })
+
+.catch(err =>{
+    console.log(err)
+} )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+// let Prod = new Request('https://api.sampleapis.com/coffee/hot')
