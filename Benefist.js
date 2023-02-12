@@ -25,11 +25,12 @@ BuyDiv.appendChild(ForDiv)
 ForDiv.setAttribute('class', 'for-div')
 
 let WhyArr = [
-    {fimg:'Terev.svg',for1h4:'Original coffee',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
-    {fimg:'Shape2.svg',for1h4:'Free shipping',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
-    {fimg:'Shape1.svg',for1h4:'Cancel anytime',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
-    {fimg:'Shape3.svg',for1h4:'Various coffe',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '}
+    {fimg:'image/Terev.svg',for1h4:'Original coffee',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
+    {fimg:'image/Shape2.svg',for1h4:'Free shipping',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
+    {fimg:'image/Shape1.svg',for1h4:'Cancel anytime',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '},
+    {fimg:'image/Shape3.svg',for1h4:'Various coffe',for1p:'Aromatic aroma con panna, crema so coffee robust coffee barista, cafe,Shop latte cortado  '}
 ]
+
 WhyArr.forEach(element => {
     let For1 = document.createElement('div')
     ForDiv.appendChild(For1)
@@ -47,7 +48,7 @@ WhyArr.forEach(element => {
     Fiimg.setAttribute('class', 'img1-for')
     Fi.appendChild(Fiimg)
     Fiimg.src = element.fimg
-    
+
 
     let EsimDiv = document.createElement('div')
     For1.appendChild(EsimDiv)

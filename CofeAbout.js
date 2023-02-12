@@ -33,4 +33,4 @@ Ah5.innerText = 'Reed Full Story'
 let Abimg = document.createElement('img')
 divAb2.appendChild(Abimg)
 Abimg.setAttribute('class', 'Abimg')
-Abimg.src = 'coffee.svg'
+Abimg.src = 'image/coffee.svg'

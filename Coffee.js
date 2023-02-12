@@ -21,7 +21,7 @@ divImg2.setAttribute('class', 'div-img2')
 
 let Bajak = document.createElement('img')
 divImg1.appendChild(Bajak)
-Bajak.src = 'coffee.svg'  
+Bajak.src = 'image/coffee.svg'  
 
 let h3 = document.createElement('h3')
 divImg2.appendChild(h3)

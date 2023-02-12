@@ -40,7 +40,7 @@ Two1h4.innerText = 'What is the defference between Free & Paid ?'
 let Two1img = document.createElement('img')
 Two1div.append(Two1img)
 Two1img.setAttribute('class', 'two1-img')
-Two1img.src = 'chev.svg'
+Two1img.src = 'image/chev.svg'
 
 let Two1p = document.createElement('p')
 Two1div.append(Two1p)
@@ -62,7 +62,7 @@ for (let i = 0; i < 2; i++) {
     let Two3img = document.createElement('img')
     Two3div.append(Two3img)
     Two3img.setAttribute('class', 'two3-img')
-    Two3img.src = 'chev.svg'
+    Two3img.src = 'image/chev.svg'
 }
 
 let Two2 = document.createElement('div')
@@ -82,6 +82,6 @@ for (let i = 0; i < 3; i++) {
     let Two3img = document.createElement('img')
     Two2div1.append(Two3img)
     Two3img.setAttribute('class', 'two3-img')
-    Two3img.src = 'chev.svg'
+    Two3img.src = 'image/chev.svg'
 }
 
