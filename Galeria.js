@@ -30,11 +30,10 @@ FlexDiv.appendChild(Griddiv1)
 Griddiv1.setAttribute('class', 'flex-div1')
 let b = document.createElement('p')
 Griddiv1.append(b)
-b.innerText = 'jjjjjjjjjjjjj'
+
 if(i == 1){
 
     Griddiv1.style.gridColumn = '2/span 2'
-    
 }
     
 }

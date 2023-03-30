@@ -23,7 +23,7 @@ div1.appendChild(a1)
 a1.setAttribute('class', 'shape')
 
 let img = document.createElement('img')
-img.src = "Shape.svg"
+img.src = "image/Shape.svg"
 a1.appendChild(img)
 div1.append(a1)
 
@@ -79,7 +79,7 @@ divFind.appendChild(a8)
 a8.setAttribute('class', 'hape')
 
 let img1 = document.createElement('img')
-img1.src = "hape.svg"
+img1.src = "image/hape.svg"
 a8.appendChild(img1)
 
 
@@ -93,7 +93,7 @@ divFind.appendChild(a0)
 a0.setAttribute('class', 'icon1')
 
 let img2 = document.createElement('img')
-img2.src = "Icon (1).svg"
+img2.src = "image/Icon (1).svg"
 a0.appendChild(img2)
 
 let a = document.createElement('a')
@@ -101,7 +101,7 @@ divFind.appendChild(a)
 a.setAttribute('class', 'icon2')
 
 let img3 = document.createElement('img')
-img3.src = "Icon (2).svg"
+img3.src = "image/Icon (2).svg"
 a.appendChild(img3)
 
 let hr = document.createElement('hr')

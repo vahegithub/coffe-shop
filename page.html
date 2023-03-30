@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+      
+      
+    <!-- <a href="file:///home/david/Desktop/coffe-shop/page.html" target="_blank"></a> -->
+           <style>
+            .xdiv{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .ximg{
+                width: 200px;
+                height: 250px;
+                width: 100%;
+            }
+
+            p{
+                line-height: 30px;
+            }
+          
+
+           </style>
+<script>
+        fetch('https://api.sampleapis.com/coffee/hot')
+        .then(res =>{
+            return res.json()
+        })
+        .then(data => {
+            data.map((element) => {
+         let pageDiv = document.createElement('div')
+        document.body.append(pageDiv)
+        pageDiv.setAttribute('class','xdiv')
+
+        let xdiv1 = document.createElement('div')
+        pageDiv.append(xdiv1)
+        xdiv1.setAttribute('class','xdiv1')
+
+
+        let ximgdiv = document.createElement('div')
+        xdiv1.append(ximgdiv)
+
+        let ximg = document.createElement('img')
+        ximgdiv.append(ximg)
+        ximg.setAttribute('class','ximg')
+        ximg.src = element.image
+
+        let xdiv2 = document.createElement('div')
+        pageDiv.append(xdiv2)
+        xdiv1.setAttribute('class','xdiv2')
+
+        let xp = document.createElement('p')
+        xdiv2.append(xp)
+        xp.setAttribute('class','div2-p')
+        xp.innerText = 'Coffe lopem his message is not supported by your version'
+
+        let xArray = [
+
+            {keys:'Code:',value: 'f-235469'},
+            {keys:'Partner: ',value: 'Coffeeshop'},
+            {keys:'Subscription',value:'Breakfast'}
+        ]
+        xArray.forEach(element => {
+            
+        let xp1 = document.createElement('p')
+        xdiv2.append(xp1)
+        xp.setAttribute('class','div2-p')
+
+
+        let span1 = document.createElement('span')
+        xp1.append(span1)
+        span1.innerText = element.keys
+
+        let span = document.createElement('span')
+        xp1.append(span)
+        span.innerText = element.value
+     
+        });
+
+        let xp2 = document.createElement('p')
+        xdiv2.append(xp2)
+        xp2.setAttribute('class','xp2')
+        xp2.innerText = '2.800 $'
+
+            })
+        })
+
+        .catch(err => console.log(err))
+
+
+        
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
